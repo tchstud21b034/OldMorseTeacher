@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <img :src="questionCircle" v-b-tooltip.hover.right :title="hintContent" />
-  </div>
+  <img
+    :src="questionCircle"
+    v-b-tooltip.hover.right
+    :title="hintContent"
+    style="width: 2vw; height: 2vw; vertical-align: super;"
+  />
 </template>
 
 <script>

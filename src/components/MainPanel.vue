@@ -6,14 +6,13 @@
     >
       {{ instructionTitle }}
     </h1>
-    <Hint :hintContent="instructions" />
     <div class="morse-input-area">
       <input type="text" class="morse-input-field" v-model="morseInput" />
       <h1 :style="scoreStyle" class="score">
         {{ `remaining: ${score}` }}
       </h1>
       <div style="float: left">
-        <SubmitBtn @submitClick="submitAnswer" />
+        <SubmitBtn @submitClick="submitAnswer" style="margin-right: 1vw" />   <Hint :hintContent="instructions" />
       </div>
     </div>
     <img class="rightImage" :src="Shape" />
@@ -61,7 +60,7 @@ export default {
       if (this.isPractice) {
         instructions = `get morse code then enter its corresponding letter and hit the submit button or press 
 the "Enter" key to confirm.
-In the top right corner you will see your success rate which determines how well you're doing.`;
+In the left sidebar you will see your success precentage and progress.`;
       } else if (this.isTest) {
         instructions = `get a character, enter its code (_ or .) and hit the submit button or press the "Enter" key to confirm.
 In the left sidebar you will see your success precentage and progress.`;
@@ -69,7 +68,7 @@ In the left sidebar you will see your success precentage and progress.`;
         instructions = `get a character, enter its code (_ or .) and hit the submit button or press the "Enter" key to confirm.
         under the input field you will see a score counter - your objective in every level is to bring 
         it down to 0.
-        but first, choose one of the 5 learning level (these simply limits the practice to a certain range
+        but first, choose one of the 5 learning level in the left sidebar (these simply limits the practice to a certain range
         of Letters).`;
       }
 

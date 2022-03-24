@@ -1,9 +1,7 @@
 <template>
-  <div>
     <button class="submit-btn" @click="btnClicked">
       <slot></slot> {{ text }}
     </button>
-  </div>
 </template>
 
 <script>

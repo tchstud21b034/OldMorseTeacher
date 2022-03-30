@@ -3,7 +3,7 @@
     :src="questionCircle"
     v-b-tooltip.hover.right
     :title="hintContent"
-    style="width: 2vw; height: 2vw; vertical-align: super;"
+    style="width: calc(12px + 1vw); height: calc(12px + 1vw); vertical-align: super"
   />
 </template>
 

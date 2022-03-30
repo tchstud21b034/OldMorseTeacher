@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img style="width: 65vw" :src="Chart" >
+        <img style="width: calc(120px + 45vw)" :src="Chart" >
     </div>
 </template>
 

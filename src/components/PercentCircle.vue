@@ -4,10 +4,10 @@
       <div
         class="cdc"
         style="
-          width: 90%;
-          padding-bottom: 90%;
-          margin-top: 2vw;
+          width: 12.8vw;
+          padding-bottom: 12.7vw;
           background-color: rgb(238, 238, 238);
+          margin: 1vw
         "
       >
         <div class="cdc-sections" style="transform: rotate(0deg)">
@@ -27,10 +27,10 @@
         <div
           class="cdc-overlay"
           style="
-            height: 70%;
-            width: 70%;
-            top: calc(15%);
-            left: calc(15%);
+            height: 9vw;
+            width: 9vw;
+            top: 1.9vw;
+            left: 1.9vw;
             background-color: rgb(227, 227, 227);
           "
         >

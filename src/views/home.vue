@@ -31,22 +31,22 @@ export default {
 <style scoped>
 .welcome {
   font-family: PT Sans Caption;
-  font-size: 4.5vw;
+  font-size: calc(15px + 3.5vw);
   font-style: normal;
   font-weight: 700;
   text-align: left;
-  margin-left: 14vw;
-  margin-top: 8vh;
+  margin-left: 11vw;
+  margin-top: 6vh;
 }
 .intro {
   font-family: PT Sans Caption;
-  font-size: 1.5vw;
+  font-size: calc(10px + 1.3vw);
   font-style: normal;
   font-weight: 700;
   text-align: left;
-  margin-left: 14vw;
+  margin-left: 11vw;
   margin-top: 2vh;
-  max-width: 40vh;
+  max-width: 60vw;
 }
 .rightImage {
   position: fixed;

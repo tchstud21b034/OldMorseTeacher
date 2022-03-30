@@ -25,13 +25,16 @@ export default {
   width: 15vw;
   height: 4vw;
 
+  width: calc(50px + 10vw);
+  height: calc(13px + 2.5vw);
+
   filter: drop-shadow(1px 3px 10px rgba(0, 0, 0, 0.25));
   border: 0px;
 
   font-family: "Inder", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 2vw;
+  font-size: calc(8px + 1.5vw);
 
   border-color: #ffd028;
   background: #ffd028;

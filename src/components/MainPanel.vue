@@ -265,11 +265,11 @@ In the left sidebar you will see your success precentage and progress.`;
 
 .translate-instruction {
   font-family: PT Sans Caption;
-  font-size: 4vw;
   font-weight: 700;
   text-align: left;
   margin-left: 4vw;
   margin-top: 4vh;
+  font-size:calc(10px + 2.8vw);
 }
 
 .morse-input-area {
@@ -283,7 +283,7 @@ In the left sidebar you will see your success precentage and progress.`;
   float: left;
 
   font-family: PT Sans Caption;
-  font-size: 3.7vw;
+  font-size: calc(15px + 2.7vw);
 
   margin-top: 3.5vh;
   background: #ffffff;
@@ -300,6 +300,7 @@ In the left sidebar you will see your success precentage and progress.`;
   font-weight: normal;
   font-size: 2vw;
   text-align: right;
+  font-size:calc(8px + 1.2vw);
 }
 
 .correct {

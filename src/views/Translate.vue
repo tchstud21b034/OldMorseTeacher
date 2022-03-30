@@ -2,13 +2,13 @@
   <div>
     <h1 class="title">Translate</h1>
     <textarea type="text" class="input" v-model="inputToTranslate" />
-    <b-row style="float: center" class="justify-content-md-center">
-      <b-col lg="3">
+    <b-row style="float: center" class="justify-content-center">
+      <b-col cols="3">
         <Button text="switch" @submitClick="switchTranslation">
           <font-awesome-icon icon="fa-solid fa-arrows-up-down"
         /></Button>
       </b-col>
-      <b-col lg="3"><Button text="clear" @submitClick="clear" /></b-col>
+      <b-col cols="3"><Button text="clear" @submitClick="clear" /></b-col>
     </b-row>
     <textarea disabled class="input" :value="translate"></textarea>
   </div>
@@ -87,7 +87,7 @@ export default {
 <style scoped>
 .title {
   font-family: PT Sans Caption;
-  font-size: 4vw;
+  font-size: calc(15px + 3vw);
   font-weight: 700;
   margin-left: 4vw;
   margin-top: 4vh;
@@ -104,7 +104,7 @@ export default {
   border-radius: 8px;
 
   font-family: PT Sans Caption;
-  font-size: 2vw;
+  font-size: calc(7px + 1.5vw);
 }
 .input:focus {
   outline: none !important;

@@ -30,7 +30,7 @@
 <style scoped>
 .title {
   font-family: PT Sans Narrow;
-  font-size: 3.5vw;
+  font-size: calc(13px + 2vw);
   font-style: normal;
   font-weight: 400;
   text-align: right;
@@ -46,6 +46,6 @@
   padding-top: 1vw;
 }
 .logo {
-  width: 7vw;
+  width: calc(26px + 5vw);
 }
 </style>

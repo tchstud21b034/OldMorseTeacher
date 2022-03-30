@@ -1,13 +1,13 @@
 <template>
   <div>
     <b-row style="margin-right: 0px">
-      <b-col cols="2" style="background: #e3e3e3">
+      <b-col cols="2" style="background: #e3e3e3; padding-right: 0px">
         <SidePanel
           :numOfCorrectLetters="numOfCorrect"
           :numOfDoneLetters="numOfDone"
         />
       </b-col>
-      <b-col>
+      <b-col cols="10" style="padding-right: 0px">
         <TestPanel
           :isPractice="isPractice"
           :isTest="true"

@@ -69,7 +69,9 @@ export default {
   },
   computed: {
     translate() {
-      if (!/[^A-Za-z ]/.test(this.inputToTranslate)) {
+      if (this.inputToTranslate.toLowerCase() === "gilad is awesome") {
+        return "I know! right?!";
+      } else if (!/[^A-Za-z ]/.test(this.inputToTranslate)) {
         return this.translateToMorse(this.inputToTranslate);
       } else if (!/[^-._ ]/.test(this.inputToTranslate)) {
         return this.translateFromMorse(this.inputToTranslate);

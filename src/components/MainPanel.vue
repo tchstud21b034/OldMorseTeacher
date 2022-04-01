@@ -174,7 +174,7 @@ In the left sidebar you will see your success precentage and progress.`;
     },
     isCorrectMorse() {
       if (this.isPractice) {
-        return this.morseInput === this.currentLetter;
+        return this.morseInput.toLowerCase() === this.currentLetter;
       }
       return (
         this.morseInput.replace(/ /g, "").replace(/-/g, "_") ===

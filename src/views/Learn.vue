@@ -34,6 +34,14 @@ export default {
     },
     completeLevel() {
       this.levels[this.currLevel - 1].done = true;
+      sessionStorage.setItem(`star${this.currLevel}`, true);
+    }
+  },
+  created() {
+    for(let level = 1; level <= 5; level ++) {
+      if (sessionStorage.getItem(`star${level}`)) {
+        this.levels[level - 1].done = true;
+      }
     }
   },
   components: {

@@ -78,6 +78,17 @@ export default {
       }
     },
   },
+  created() {
+    this.inputToTranslate = sessionStorage.getItem("translation");
+    if (!this.inputToTranslate) {
+      this.inputToTranslate = "";
+    }
+  },
+  watch: {
+    inputToTranslate() {
+      sessionStorage.setItem("translation", this.inputToTranslate);
+    }
+  },
   components: {
     Button,
   },

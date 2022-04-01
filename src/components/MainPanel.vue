@@ -228,6 +228,17 @@ In the left sidebar you will see your success precentage and progress.`;
       this.currentLetter = this.nextLetter();
       this.isCorrectAnswer = true;
     },
+    morseInput() {
+      if (this.isPractice) {
+        if (/[^A-Za-z ]/.test(this.morseInput) || this.morseInput.length > 1) {
+          this.morseInput = this.morseInput.substring(1);
+        }
+      } else {
+        if (/[^-._ ]/.test(this.morseInput)) {
+          this.morseInput = this.morseInput.substring(0, this.morseInput.length - 1);
+        }
+      } 
+    },
   },
   mounted() {
     if (this.isPractice) {

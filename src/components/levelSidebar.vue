@@ -7,10 +7,10 @@
       :key="index"
       @click="changeCurrLevel(index + 1)"
     >
-      <b-col cols="2"
+      <b-col cols="md-2 sm-12"
         ><img :src="star" :class="{ 'deactivate-star': !level.done }"
       /></b-col>
-      <b-col style="padding-top: 0.4vh">{{ level.range }}</b-col>
+      <b-col style="padding-top: 0.4vh; padding-right: 0px; padding-left: 3vw">{{ level.range }}</b-col>
     </b-row>
   </div>
 </template>
@@ -54,12 +54,12 @@ export default {
 .level {
   padding: 1vw;
   margin-top: 2vh;
-  padding-left: 2vw;
   cursor: pointer;
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: calc(7px + 1.4vw);
 }
 .selected {
   background: rgb(134, 134, 134);

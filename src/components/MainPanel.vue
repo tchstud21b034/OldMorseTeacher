@@ -267,9 +267,9 @@ In the left sidebar you will see your success precentage and progress.`;
 
 <style scoped>
 .rightImage {
-  position: fixed;
+  position: relative;
   bottom: 0px;
-  right: 0px;
+  float: right;
   height: 75vh;
   width: 30vw;
 }

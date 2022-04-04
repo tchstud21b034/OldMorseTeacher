@@ -4,7 +4,7 @@
       <b-col cols="2" style="background: #e3e3e3">
         <Sidebar :levels="levels" @currLevel="updateCurrLevel" />
       </b-col>
-      <b-col >
+      <b-col style="padding-right: 0;">
         <mainPanel @completed="completeLevel" :level="currLevel" />
       </b-col>
     </b-row>
